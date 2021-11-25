@@ -71,7 +71,7 @@ nav ul li:hover {
 
 #header img:nth-of-type(2) {
     position: absolute;
-    top: 130px;
+    top: 150px;
     right: -5px;
     min-width: 450px;
 }
@@ -149,3 +149,159 @@ a {
     color:#fff;
 }
 
+/* Verschillende media queries voor wanneer je schermen heb groter dan 1100px */
+@media (min-width: 1100px) and (max-width: 1200px) {
+    /* NAVIGATIE */
+
+    nav ul a li img{
+        position: relative;
+        top:10px;
+        left:500px;
+        max-width: 100px;  
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1350px) {
+    /* NAVIGATIE */
+
+    nav ul a li img{
+        position: relative;
+        top:10px;
+        left:600px;
+        max-width: 100px;  
+    }
+
+    #header img:nth-of-type(1) {
+        position: absolute;
+        top: 250px;
+        left: 200px;
+        max-width: 250px; 
+    }
+    nav ul li{
+        display: inline;
+        position: relative;
+        left: 150px;
+        margin-left: 1em;
+    }
+}
+
+@media (min-width: 1350px) and (max-width: 1500px) {
+    /* NAVIGATIE & header */
+
+    nav ul a li img{
+        position: relative;
+        top:10px;
+        left:750px;
+        max-width: 100px;  
+    }
+
+    #header img:nth-of-type(1) {
+        position: absolute;
+        top: 250px;
+        left: 200px;
+        max-width: 250px; 
+    }
+    nav ul li{
+        display: inline;
+        position: relative;
+        left: 150px;
+        margin-left: 1em;
+    }
+}
+
+/* Mobile schermen */
+
+@media (min-width: 300px) and (max-width: 850px) {
+    
+    nav ul li{
+        display: inline;
+        position: relative;
+        left: -15px;
+        top:10px;
+        margin-left: .5em;
+        font-size: 1.15em;
+    }
+    
+    nav ul a li img{
+        position: relative;
+        top:-30px;
+        left:310px;
+        max-width: 100px;  
+    }
+
+    /* header */
+
+    #header {
+        min-height: 1020px;
+    }
+    
+    #header img:nth-of-type(1) {
+        position: absolute;
+        top: 250px;
+        left: 70px;
+        max-width: 350px; 
+    }
+    
+    #header img:nth-of-type(2) {
+        position: absolute;
+        top: 530px;
+        left: 30px;
+        min-width: 450px;
+    }
+
+    /* Cases */
+#mywork-grid {
+    padding: 0;
+    
+	display: grid;
+	grid-template-columns: 320px;
+	grid-template-rows: 450px 450px 450px 450px 450px;
+	grid-column-gap: 60px;
+	grid-row-gap:40px;
+}
+
+#mywork ul li p {
+    position: relative;
+    top:-10px;
+}
+
+#mywork {
+position: relative;
+padding: 0 65px 0 65px;
+}
+
+#mywork h1 {
+    margin-bottom:50px;
+}
+
+/* Pages cases */
+
+.case-page {
+    margin: 0 35px 0 35px;
+    max-width: 300px;
+}
+
+.case-page img {
+    max-width: 375px;
+}
+
+#pasta-img img {
+    max-width: 300px;
+    display: block;
+}
+
+#pasta-img img:last-of-type {
+    margin-top: 20px;
+    margin-left: 0px;
+}
+
+.case-page p {
+    min-width: 350px;
+    margin-bottom: 50px;
+    line-height: 1.5em;
+}
+
+.case-page h1 {
+    margin-top: 0;
+} 
+}
