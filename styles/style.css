@@ -71,8 +71,8 @@ nav ul li:hover {
 
 #header img:nth-of-type(2) {
     position: absolute;
-    top: 150px;
-    right: 0px;
+    top: 130px;
+    right: -5px;
     min-width: 450px;
 }
 
