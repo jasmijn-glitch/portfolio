@@ -55,11 +55,18 @@ nav ul a li img{
 nav ul li:hover {
     font-weight: bold;
     font-size: 1.2em;
+    padding-bottom:3px;
+    border-bottom: 1px #ffffff solid;
 }
+
+nav ul li:last-of-type:hover {
+    border-bottom: none;
+}
+
 /* HEADER */
 
 #header {
-    min-height: 650px;
+    min-height:100vh;
 }
 
 #header img:nth-of-type(1) {
@@ -71,16 +78,52 @@ nav ul li:hover {
 
 #header img:nth-of-type(2) {
     position: absolute;
-    top: 150px;
+    bottom: 0px;
     right: -5px;
-    min-width: 450px;
+    min-width: 400px;
 }
+
+#header img:nth-of-type(3) {
+    opacity: 0;
+    position: absolute;
+    bottom: 0px;
+    right: -5px;
+    min-width: 400px;
+}
+
+@keyframes  wink {
+    0% {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 1;
+  }
+
+  95% {
+    opacity: 1;
+}
+  
+    100% {
+        opacity: 0;
+  }
+  }
+
+#header img:nth-of-type(3):hover {
+
+    animation-name: wink; 
+    animation-duration: .3s;
+    animation-delay: .1s;
+    animation-fill-mode:both;
+}
+
+
 
 /* MY WORK - portfolio cases */
 
 #mywork {
-position: relative;
-padding: 0 100px 0 130px;
+    max-width: 720px;
+    margin:auto;
 }
 
 #mywork h1 {
@@ -90,10 +133,8 @@ padding: 0 100px 0 130px;
 /* Cases */
 #mywork-grid {
     padding: 0;
-
-    
 	display: grid;
-	grid-template-columns: 350px 350px;
+	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 450px 450px 450px 450px 450px;
 	grid-column-gap: 60px;
 	grid-row-gap:40px;
@@ -104,14 +145,31 @@ padding: 0 100px 0 130px;
     top:-10px;
 }
 
+@keyframes  zoom-case {
+    0% {
+        transform: scale(1);
+    }
+  
+    100% {
+        transform: scale(1.04);
+  }
+  }
+
+#mywork ul li:hover {
+    animation-name: zoom-case; 
+    animation-duration: .3s;
+    animation-delay: .1s;
+    animation-fill-mode:both;
+}
+
 /* Cases op eigen pagina */
 .case-page {
-    margin: 0 155px 0 155px;
-    max-width: 500px;
+    margin: auto;
+    max-width: 600px;
 }
 
 .case-page img {
-    max-width: 750px;
+    max-width: 600px;
 }
 
 #pasta-img img {
@@ -211,7 +269,7 @@ a {
 
 /* Mobile schermen */
 
-@media (min-width: 300px) and (max-width: 850px) {
+@media (min-width: 300px) and (max-width: 800px) {
     
     nav ul li{
         display: inline;
