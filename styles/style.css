@@ -404,7 +404,7 @@ a {
     padding: 0;
 	display: grid;
 	grid-template-columns: 320px;
-	grid-template-rows: 420px 420px 420px 420px 420px;
+	grid-template-rows: 435px 435px 435px 435px 435px 435px 435px 435px 435px 435px;
     grid-column-gap: 30px;
 	grid-row-gap:5px;
     max-width: 100vw;
