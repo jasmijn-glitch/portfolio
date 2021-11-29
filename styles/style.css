@@ -387,14 +387,14 @@ a {
     
     #header img:nth-of-type(1) {
         position: absolute;
-        top: 150px;
+        top: 130px;
         left: 17%;
         max-width: 250px; 
     }
     
     #header img:nth-of-type(2) {
         position: absolute;
-        top: 350px;
+        top: 330px;
         min-width: 180px;
     }
 
@@ -459,4 +459,14 @@ a {
 .case-page h2 {
     margin: 20px 0 50px 0;
 }
+
+#pasta-img {
+min-height: 1130px;
+}
+
+#pasta-img a {
+    position: relative;
+    top:320px;
+}
+
 }
